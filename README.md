@@ -199,22 +199,26 @@ PubMed / Biopython
 GitHub
 
 📂 Project Structure
+
+```text
 lead_intel_app/
 │
-├── app.py
-├── config.py
+├── app.py                     # Streamlit dashboard
+├── config.py                  # Scoring weights
+├── requirements.txt           # Dependencies
 │
 ├── modules/
-│   ├── identify.py
-│   ├── enrich.py
-│   └── score.py
+│   ├── identify.py            # Lead identification
+│   ├── enrich.py              # Lead enrichment logic
+│   └── score.py               # Explainable scoring engine
 │
 ├── utils/
-│   ├── pubmed.py
-│   └── ai_enrich.py
+│   ├── pubmed.py              # PubMed publication signal
+│   └── ai_enrich.py           # AI-based enrichment (LLM / fallback)
 │
 └── app_models/
-    └── lead.py
+    └── lead.py                # Lead data model (Pydantic)
+
 
 🧠 Design Philosophy
 
